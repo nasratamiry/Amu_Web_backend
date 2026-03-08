@@ -1,0 +1,42 @@
+{
+  "name": "amu-web-backend",
+  "version": "1.0.0",
+  "description": "Node.js + TypeScript backend for Etihad Amu website",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc && node dist/index.js",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "mongodb",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.8.0",
+    "morgan": "^1.10.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.13.0",
+    "@typescript-eslint/parser": "^8.13.0",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.9.3"
+  }
+}
